@@ -11,6 +11,9 @@
 
     <body>
 
+        <!--Header-->
+
+
         <div class="container">
             <div class="top-header">
                 <p>Grandes ofertas en comederos</p>
@@ -22,13 +25,17 @@
 
     <header>
             <div class="nav-bar">
-                <img src="./img/logo.png" alt="LogoPetshop">
+                <img src="./img/logo.png" class="logo" alt="LogoPetshop">
                 <ul class="nav-list">
                     <li><a href="">Categorias</a><i class="fas fa-paw"></i></li>
                     <li><a href="">Pets</a><i class="fas fa-paw"></i></li>
                     <li><a href="">Nosotros</a><i class="fas fa-paw"></i></li>
                     <li><a href="">Contáctanos</a><i class="fas fa-paw"></i></li>
                 </ul>
+                
+              <span class="tripledemiga">
+                <i class="fas fa-bars"></i>
+              </span>
     </header>
     
         <section class="banner">
@@ -39,9 +46,9 @@
                </div>
         </section>
 
-    
+     <!--Categories and cards -->
+
      <section class="categories">
-                <div class="title-categories"></div>
                 <i class="fas fa-paw color fa-5x"></i>
                 <h2>Productos Destacados</h2>
                 <ul class="list">
@@ -76,6 +83,9 @@
 
         </section>
      
+        <!--Forms -->
+
+
          <section class="forms">
                 <h2>Contáctanos</h2>
                 <form class="contact-forms">
@@ -83,7 +93,7 @@
                         <input class="input-form" type="text" placeholder="Nombre y Apellido" required>
                     </label>
                     <label for="email">
-                        <input class="input-form" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        <input class="input-form" type="email" pattern=""
                             placeholder="Ingresá tu correo electrónico" required>
                     </label>
                     <label for="phone">
@@ -113,23 +123,46 @@
             </form>
     </section>
 
-
-
+</body>
+        
+    <!--Footer --> 
 
     <footer class="foot">
-        <div>
-            
+        
+        <div class="information">
+            <img src="./img/ubicacion.png">
+            <div class="info">
+                <h3> Localidad</h3>
+                <p>Calle - provincia</p>
+            </div>
         </div>
 
+    
 
-    </footer>
-    <div class="foot2"> 
-        <p>Todos los derechos reservados Front End</p> 
+        <div class="information">
+            <img src="./img/telefono.png">
+            <div class="info">
+                <h3> Teléfono</h3>
+                <p>Número de teléfono</p>
+            </div>
+        </div>
+
+        <div class="information">
+            <img src="./img/correo.png">
+            <div class="info">
+                <h3> Correo Electronico</h3>
+                <p>Dirección de correo </p>
+            </div>
+        </div>
+    
     </div> 
 
+    <div class="foot2"> 
+        <p>Todos los derechos reservados Front End</p> 
 
 
+</footer>
 
-    </body>
+  
 
 </html>

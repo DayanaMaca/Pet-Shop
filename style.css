@@ -4,11 +4,16 @@
 	box-sizing: border-box;
   }
   
+  body{
+	font-family: 'Roboto', sans-serif;
+  }
 
 .container {
-	font-family: 'Roboto', sans-serif;
 	font-size: 10px;
 	}
+
+	 /* Header */
+
 	
 .top-header {
 	background-color: #222222;
@@ -41,10 +46,16 @@
     align-items: center;
 
 }
+nav-bar .logo{
+	height: 70px;
+}
+.nav-list{
+	display: flex;
+}
 
 
 .nav-list li{
-	display: inline-block;
+	display: flex;
 	font-size: 15px;
 	margin: 5px;
 	padding-left: 20px;
@@ -52,15 +63,7 @@
 	color: white;
 }
 
-.header-nav {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    color: #FFFFFF;
-    margin-right: 40px;
-    font-size: 13px;
-    font-weight: 400;
-}
+
 
 .nav-list li a {
 	color: white;
@@ -119,10 +122,21 @@
 	text-align: center;
 }
 
+.tripledemiga{
+	color: #ffffff;
+	font-size: 30px;
+	padding: 0 20px;
+	line-height: 60px;
+	display: none;
+	}
+
+   /*Categories and cards */
+
 .categories{
 		display: flex;
 		flex-direction: column;
 		text-align: center;
+		
 }
 .list {
     display: flex;
@@ -141,6 +155,8 @@
     font-size: 40px;
     font-weight: 700;
     padding-top: 5px;
+	
+
 }
 
 .list {
@@ -152,9 +168,14 @@
 .list li {
     padding: 20px 13px;
 }
+
+
+/*Cards products */
+
 .products {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .cards{
@@ -176,6 +197,8 @@
 	font-size: 15px;
 	font-weight: 500;
 }
+
+ /*forms */
 
 .forms{
 display: flex;
@@ -278,16 +301,47 @@ display: flex;
 	font-size: 9px;
 	font-weight: 700;
 	border: none;
+	
 }
+
+ /*Footer */
 
 .foot{
 	height: 284px;
 	background-color: #3C2313;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+
+}
+
+.information{
+	display: flex;
+	margin-left: 20px;
+}
+
+.info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+}
+.info h3{
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.info p{
+	color: #8A8787;
+	font-weight: 700;
+	size: 10px;
 }
 
 .foot2{
-background-color: #222222;
-height: 20px;
+	background-color: #222222;
+	height: 20px;
+	font-size: 10px;
 }
 .foot2 p{
 	color: #FFFFFF;
@@ -295,3 +349,27 @@ height: 20px;
 	padding: 4px;
 	text-align: center;
 }
+
+
+@media (max-width: 500px){
+	
+	
+	.nav-list{
+		flex-direction: column;
+		align-items: center;
+		position: fixed;
+		display: none;
+
+	}
+	
+	.tripledemiga{
+		display: block;
+		}
+
+		nav-bar .logo{
+			height: 50px;
+		}
+}
+
+
+
